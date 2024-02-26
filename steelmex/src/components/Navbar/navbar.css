@@ -1,0 +1,36 @@
+:root {
+    --mainGreen: #214E34; 
+}
+
+.navbar {
+    background: #D3D5D7;
+    height: 5rem;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo {
+    object-fit: cover;
+    height: 6rem;
+    width: 6rem;
+}
+
+.desktopMenuLi {
+    margin: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+.desktopMenuLi:hover {
+    color: var(--mainGreen); 
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--mainGreen);
+}
