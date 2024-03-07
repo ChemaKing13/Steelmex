@@ -1,9 +1,17 @@
-import { Navbar } from './components/Navbar'; 
+import { Navbar, Main, Info } from './components';
+
 
 
 const App = () => (
 
-    <Navbar />
+    <div>
+        <Navbar />
+        <Main />
+        <Info />
+    </div>
+
+
+
 
 ); 
 

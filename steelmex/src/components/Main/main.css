@@ -1,0 +1,15 @@
+
+#intro {
+    width: 100%;
+    height: 38vh;
+    position: relative;
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+.rollosImg {
+    object-fit: cover;  
+    height: 100%;
+    width: 100%; 
+}
+
