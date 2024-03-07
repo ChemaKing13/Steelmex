@@ -3,8 +3,8 @@
 }
 
 .navbar {
-    background: #D3D5D7;
-    height: 5rem;
+    background: black;
+    height: 10rem;
     width: 100vw;
     max-width: 100%;
     margin: 0 auto; 
@@ -24,7 +24,8 @@
 }
 
 .desktopMenuLi {
-    margin: 1rem;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
     cursor: pointer;
     color: white;
 }
@@ -33,4 +34,47 @@
     color: var(--mainGreen); 
     padding-bottom: 0.3rem;
     border-bottom: 3px solid var(--mainGreen);
+}
+
+.navBtn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.active {
+    color: yellow;
+}
+
+.navMenu {
+    position: absolute;
+    top: 4rem; 
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.mobMenu {
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+    .mobMenu {
+        display: flex;
+    }
+    .desktopMenu {
+        display: none;
+    }
+    .navBtn {
+        visibility: visible;
+        opacity: 1;
+    }
 }
